@@ -1,0 +1,50 @@
+:root
+{
+    --background-color: #2F303A;
+}
+:root
+{
+    --text-color-grey: #757575;
+}
+*{
+    font-family: 'Roboto', sans-serif;  /*  Тут я використав chatGPT */
+    text-decoration: none;
+    color: #212121;
+}
+.our_team
+{
+    background-color: #F5F4FA;
+}
+.business_solutions
+{
+    background-color: var(--background-color);
+}
+.order_service
+{
+    color: white;
+    background-color: blue;
+}
+.main_title
+{
+    font-family: 'Raleway';
+}
+.blue_text
+{
+    color: #137BC9;
+}
+.grey_text
+{
+    color: var(--text-color-grey);
+}
+.white_text
+{
+    color: white;
+}
+footer
+{
+    background-color: var(--background-color);
+}
+.grey_background>li
+{
+    background-color:#F5F4FA;                           /* Тут я хотів зробити як в фігмі сіру тінь, але я не знаю як це зробить нормально і я зробив як знаю🙃*/
+}
