@@ -4,7 +4,11 @@
 }
 :root
 {
-    --text-color-grey: #757575;
+    --text-color-white: white;
+}
+:root
+{
+    --blue-color: #137BC9;
 }
 *{
     font-family: 'Roboto', sans-serif;  /*  Тут я використав chatGPT */
@@ -22,7 +26,8 @@
 .order_service
 {
     color: white;
-    background-color: #137BC9;
+    background-color: var(--blue-color);
+    border: none;
 }
 .main_title
 {
@@ -30,21 +35,83 @@
 }
 .blue_text
 {
-    color: #137BC9;
-}
-.grey_text
-{
-    color: var(--text-color-grey);
+    color: var(--blue-color);
 }
 .white_text
 {
-    color: white;
+    color: var(--text-color-white);
 }
 footer
 {
     background-color: var(--background-color);
 }
-.grey_background>li
+.grey_background li
 {
     background-color:#F5F4FA;                           /* Тут я хотів зробити як в фігмі сіру тінь, але я не знаю як це зробить нормально і я зробив як знаю🙃*/
+}
+.white_text_opacity
+{
+    color: var(--text-color-white);
+    opacity: 60%;
+}
+.grey_text_color
+{
+    color: #757575;
+}
+#blue_hover:hover
+{
+    color: var(--blue-color);
+}
+.all:visited
+{
+    color: var(--blue-color);
+}
+.web-sites:visited
+{
+    color: var(--blue-color);
+}
+
+/* Контейнер кнопок */
+.tabs label input{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Приховуємо радіокнопки */
+.tabs input[type="radio"] {
+    display: none;
+}
+
+/* Стиль для всіх міток */
+.tabs label {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Активний стан */
+.tabs input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Сховати всі елементи за замовчуванням */
+.item {
+    display: none;
+}
+
+/* Показати всі елементи для "Усі" */
+#all:checked ~ .content .item {
+    display: block;
+}
+
+/* Відображення для кожної категорії */
+#websites:checked ~ .content .websites,
+#apps:checked ~ .content .apps,
+#design:checked ~ .content .design,
+#marketing:checked ~ .content .marketing {
+    display: block;
 }

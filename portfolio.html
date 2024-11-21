@@ -5,89 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>05.11.2024</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h4><span class="blue_text">Web</span>Studio</h4>
+        <h2 class="main_title"><span class="blue_text">Web</span>Studio</h2>
         <nav>
             <ul>
-                <li><a href="https://web-studio-ua.netlify.app"><h5>Студія</h5></a></li>
-                <li><a href="https://web-studio-ua.netlify.app/portfolio"><h5>Портфоліо</h5></a></li>
-                <li><a href=""><h5>Контакти</h5></a></li>
+                <li><a href="/index.html"><h5 id="blue_hover">Студія</h5></a></li>
+                <li><a href="/portfolio.html"><h5 class="blue_text">Портфоліо</h5></a></li>
+                <li><a href="#footer"><h5 id="blue_hover">Контакти</h5></a></li>
             </ul>
         </nav>
         <div>
-            <a href="mailto:info@devstudio.com"><h5 class="blue_text">info@devstudio.com</h5></a>
-            <h5 class="grey_text">+38 096 111 11 11</h5>
+            <a href="mailto:info@devstudio.com" target="_blank"><p class="grey_text_color" id="blue_hover">info@devstudio.com</p></a>
+            <p class="grey_text_color">+38 096 111 11 11</p>
         </div>
     </header>
     <hr>
     <main>
-        <div>                                           <!--Тут би дуже класно підійшли таблиці ¯\_(ツ)_/¯-->
-            <ul class="grey_background">
-                <li><h4>Усі</h4></li>
-                <li><h4>Веб-сайти</h4></li>
-                <li><h4>Додатки</h4></li>
-                <li><h4>Дизайн</h4></li>
-                <li><h4>Маркетинг</h4></li>
-            </ul>
-        </div>
-        <div>                                                               <!--І тут теж ¯\_(ツ)_/¯-->
-            <div>
-                <img src="/img/laptop.png" alt="" width="370" height="294">
-                <h3>Технокряк</h3>
-                <p>Веб-сайт</p>
-            </div>
-            <div>
-                <img src="/img/basketball.png" alt="" width="370" height="294">
-                <h3>Постер New Orlean vs Golden Star</h3>
-                <p>Дизайн</p>
-            </div>
-            <div>
-                <img src="/img/restaurant.png" alt="" width="370" height="294">
-                <h3>Ресторан Seafood</h3>
-                <p>Додаток</p>
-            </div>
-            <div>
-                <img src="img/headphones.png" alt="" width="370" height="294">
-                <h3>Проєкт Prime</h3>
-                <p>Маркетинг</p>
-            </div>
-            <div>
-                <img src="img/boxes.png" alt="" width="370" height="294">
-                <h3>Проєкт Boxes</h3>
-                <p>Додаток</p>
-            </div>
-            <div>
-                <img src="/img/mac.png" alt="" width="370" height="294">
-                <h3>Inspiration has no Borders</h3>
-                <p>Веб-сайт</p>
-            </div>
-            <div>
-                <img src="/img/book.png" alt="" width="370" height="294">
-                <h3>Видання Limited Edition</h3>
-                <p>Дизайн</p>
-            </div>
-            <div>
-                <img src="/img/tag.png" alt="" width="370" height="294">
-                <h3>Проєкт LAB</h3>
-                <p>Маркетинг</p>
-            </div>
-            <div>
-                <img src="img/notebook.png" alt="" width="370" height="294">
-                <h3>Growing Business</h3>
-                <p>Додаток</p>
+        <br>
+        <div class="tabs">
+            <input type="radio" id="all" name="category" checked>
+            <label for="all">Усі</label>
+    
+            <input type="radio" id="websites" name="category">
+            <label for="websites">Веб-сайти</label>
+    
+            <input type="radio" id="apps" name="category">
+            <label for="apps">Додатки</label>
+    
+            <input type="radio" id="design" name="category">
+            <label for="design">Дизайн</label>
+    
+            <input type="radio" id="marketing" name="category">
+            <label for="marketing">Маркетинг</label>
+            <br>
+            <br>
+            <br>
+            <div class="content">
+                <div class="item websites">
+                    <img src="/img/laptop.png" alt="" width="370" height="294">
+                    <h3>Технокряк</h3>
+                    <p class="grey_text_color">Веб-сайт</p>
+                </div>
+                <div class="item design">
+                    <img src="/img/basketball.png" alt="" width="370" height="294">
+                    <h3>Постер New Orlean vs Golden Star</h3>
+                    <p class="grey_text_color">Дизайн</p>
+                </div>
+                <div class="item apps">
+                    <img src="/img/restaurant.png" alt="" width="370" height="294">
+                    <h3>Ресторан Seafood</h3>
+                    <p class="grey_text_color">Додаток</p>
+                </div>
+                <div class="item marketing">
+                    <img src="img/headphones.png" alt="" width="370" height="294">
+                    <h3>Проєкт Prime</h3>
+                    <p class="grey_text_color">Маркетинг</p>
+                </div>
+                <div class="item apps">
+                    <img src="img/boxes.png" alt="" width="370" height="294">
+                    <h3>Проєкт Boxes</h3>
+                    <p class="grey_text_color">Додаток</p>
+                </div>
+                <div class="item websites">
+                    <img src="/img/mac.png" alt="" width="370" height="294">
+                    <h3>Inspiration has no Borders</h3>
+                    <p class="grey_text_color">Веб-сайт</p>
+                </div>
+                <div class="item design">
+                    <img src="/img/book.png" alt="" width="370" height="294">
+                    <h3>Видання Limited Edition</h3>
+                    <p class="grey_text_color">Дизайн</p>
+                </div>
+                <div class="item marketing">
+                    <img src="/img/tag.png" alt="" width="370" height="294">
+                    <h3>Проєкт LAB</h3>
+                    <p class="grey_text_color">Маркетинг</p>
+                </div>
+                <div class=" item apps">
+                    <img src="img/notebook.png" alt="" width="370" height="294">
+                    <h3>Growing Business</h3>
+                    <p class="grey_text_color">Додаток</p>
+                </div>
             </div>
         </div>
         <br>
     </main>
-    <footer>
+    <footer id="footer">
         <br>
         <h3><span class="blue_text">Web</span><span class="white_text">Studio</span></h3>
         <div>
-            <a href="https://www.google.com.ua/maps/place/GoITeens/@50.4270576,30.5377054,21z/data=!4m6!3m5!1s0x40d4cf11a1516e25:0xcb31e5389cead445!8m2!3d50.4270472!4d30.5377493!16s%2Fg%2F11kprqb_30?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><h5 class="white_text">м. Київ, пр-т Лесі Українки, 26</h5></a>
-            <a href="mailto:info@devstudio.com"><h5 class="grey_text">info@devstudio.com</h5></a>
-            <h5 class="grey_text">+38 096 111 11 11</h5>
+            <a href="https://www.google.com.ua/maps/place/GoITeens/@50.4270576,30.5377054,21z/data=!4m6!3m5!1s0x40d4cf11a1516e25:0xcb31e5389cead445!8m2!3d50.4270472!4d30.5377493!16s%2Fg%2F11kprqb_30?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p class="white_text" id="blue_hover">м. Київ, пр-т Лесі Українки, 26</p></a>
+            <a href="mailto:info@devstudio.com"><h5 class="white_text_opacity" id="blue_hover">info@devstudio.com</h5></a>
+            <h5 class="white_text_opacity">+38 096 111 11 11</h5>
         </div>
         <br>
     </footer>
