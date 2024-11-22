@@ -1,89 +1,220 @@
+/* Змінні */
 :root
 {
     --background-color: #2F303A;
 }
+
 :root
 {
     --text-color-white: white;
 }
+
 :root
 {
-    --blue-color: #137BC9;
+    --blue-color: #2196F3;
 }
+
+/* Шрифти */
+
 *{
-    font-family: 'Roboto', sans-serif;  /*  Тут я використав chatGPT */
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #212121;
 }
-.our_team
-{
-    background-color: #F5F4FA;
-}
-.business_solutions
-{
-    background-color: var(--background-color);
-}
-.order_service
-{
-    color: white;
-    background-color: var(--blue-color);
-    border: none;
-}
-.main_title
+
+.main-title
 {
     font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30.52px;
+    padding-left: 215px;
 }
-.blue_text
+
+header > nav
 {
-    color: var(--blue-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
 }
-.white_text
+
+.business-solutions
 {
-    color: var(--text-color-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
 }
-footer
+
+.about
 {
-    background-color: var(--background-color);
+    font-size: 14px;
 }
-.grey_background li
+
+.about>h4
 {
-    background-color:#F5F4FA;                           /* Тут я хотів зробити як в фігмі сіру тінь, але я не знаю як це зробить нормально і я зробив як знаю🙃*/
+    font-weight: 700;
+    line-height: 16.41px;
 }
-.white_text_opacity
+
+.about>h5
 {
-    color: var(--text-color-white);
-    opacity: 60%;
+    font-weight: 400;
+    line-height: 24px;
 }
-.grey_text_color
+
+.our-work
 {
-    color: #757575;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
 }
-#blue_hover:hover
+
+.our-team>h2
 {
-    color: var(--blue-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
 }
-.all:visited
+
+.our-team>h4
 {
-    color: var(--blue-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
 }
-.web-sites:visited
+
+.our-team>p
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+}
+
+footer > nav
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.categories
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.list-object>h3
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.list-object>p
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+/* Кольори */
+
+.blue-text
 {
     color: var(--blue-color);
 }
 
-/* Контейнер кнопок */
+.white-text
+{
+    color: var(--text-color-white);
+}
+
+.grey-text-color
+{
+    color: #757575;
+}
+
+.white-text-opacity
+{
+    color: var(--text-color-white);
+    opacity: 60%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Кольори фону */
+.business-solutions
+{
+    background-color: var(--background-color);
+    height: 600px;
+    width: 100%;
+    text-align: center;
+}
+.business-solutions>h4
+{
+    padding-top: 200px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+.our-team
+{
+    background-color: #F5F4FA;
+}
+
+footer
+{
+    background-color: var(--background-color);
+}
+
+/* Псвевдокласи */
+
+#blue-hover:hover
+{
+    color: var(--blue-color);
+    transition: color 0.17s
+}
+.all:visited
+{
+    color: var(--blue-color);
+    transition: color 0.17s
+}
+.web-sites:visited
+{
+    color: var(--blue-color);
+    transition: color 0.17s
+}
+
+/* Інше */
+
+.order-service
+{
+    color: white;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 4px;
+    width: 216px;
+    height: 50px;
+    margin-bottom: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+ul > li{
+    list-style: none;
+}
+
 .tabs label input{
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-/* Приховуємо радіокнопки */
 .tabs input[type="radio"] {
     display: none;
 }
 
-/* Стиль для всіх міток */
 .tabs label {
     padding: 10px 20px;
     border-radius: 5px;
@@ -92,26 +223,80 @@ footer
     transition: background-color 0.3s;
 }
 
-/* Активний стан */
 .tabs input[type="radio"]:checked + label {
     background-color: #007bff;
     color: white;
 }
 
-/* Сховати всі елементи за замовчуванням */
 .item {
     display: none;
 }
 
-/* Показати всі елементи для "Усі" */
 #all:checked ~ .content .item {
     display: block;
 }
 
-/* Відображення для кожної категорії */
 #websites:checked ~ .content .websites,
 #apps:checked ~ .content .apps,
 #design:checked ~ .content .design,
 #marketing:checked ~ .content .marketing {
     display: block;
+}
+
+header
+{
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+body
+{
+    margin: 0px;
+}
+
+.contact-info {
+    display: flex;
+}
+.contact-info>a
+{
+    padding-left: 344px;
+}
+.contact-info>p
+{
+    padding-left: 50px;
+}
+
+ul
+{
+    display: flex;
+}
+
+ul>li:first-child
+{
+    padding-left: 93px;
+}
+
+ul>li
+{
+    padding: 0px 25px;
+}
+.work>h2
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+.work>ul
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+.work>ul
+{
+    padding-left: 0px;
 }
