@@ -159,6 +159,8 @@ footer nav
 .our-team
 {
     background-color: #F5F4FA;
+    width: 100%;
+    height: 648px;
 }
 
 footer
@@ -242,7 +244,7 @@ ul   li{
     display: block;
 }
 
-header .contanier
+header .container
 {
     border-bottom: 1px solid #ECECEC;
     display: flex;
@@ -296,9 +298,57 @@ header ul li
 {
     padding-left: 0px;
 }
-.contanier
+
+.our-team h2
+{
+    padding-top: 94px;
+}
+
+.our-team {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.our-team .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.members {
+    margin: 0px 15px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;    
+    width: 270;
+    height: 368;
+}
+
+.container
 {
     max-width: 1200px;
     margin: 0px auto;
     padding: 0 15px;
+}
+
+.work
+{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+footer 
+{
+    padding-bottom: 60px;
+}
+footer .main-title
+{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+footer p
+{
+    margin: initial 9px;
 }
